@@ -1,4 +1,4 @@
-# chef-aws-storage-gateway-kvm-rhel9
+# aws-storage-gateway-kvm
 
 This cookbook provides a custom resource to configure and manage Amazon Web Services Storage Gateway virtual machines on RHEL9/KVM.
 
