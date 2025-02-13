@@ -29,7 +29,7 @@ The `aws_sgw` custom resource manages an AWS Storage Gateway Virtual Machine.
 In `metadata.rb` you should declare a dependency on this cookbook. For example:
 
 ```ruby
-depends 'chef-aws-storage-gateway-kvm-rhel9'
+depends 'aws-storage-gateway-kvm'
 ```
 
 A recipe using this custom resource may look like this:
@@ -49,7 +49,7 @@ end
 
 ```bash
 Converging 1 resources
-Recipe: chef-aws-storage-gateway-kvm-rhel9::default
+Recipe: aws-storage-gateway-kvm::default
     * aws_sgw[devcomm-sgw] action install
     * selinux_state[name] action permissive
         * template[permissive selinux config] action create
