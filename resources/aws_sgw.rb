@@ -118,7 +118,7 @@ action :create do
       --ram=#{new_resource.mem_allocation} \
       --vcpus=#{new_resource.cpu_allocation} \
       --disk path=#{target_directory}/sgw-disks/#{new_resource.name}-primary-disk.qcow2,bus=virtio,size=#{new_resource.primary_disk} \
-      --disk path=#{target_directory}/sgw-disks/#{new_resource.name}}-cache-disk.qcow2,bus=virtio,size=#{new_resource.cache_disk} \
+      --disk path=#{target_directory}/sgw-disks/#{new_resource.name}-cache-disk.qcow2,bus=virtio,size=#{new_resource.cache_disk} \
       --network default,model=virtio \
       --serial pty,target_type=isa-serial \
       --console pty,target_type=serial \
